@@ -1,13 +1,11 @@
 {
  "mappings": {
    "properties": {
-     "nginx.access.body_sent.bytes": { "type": "integer" },
-     "nginx.access.remote_ip": { "type": "ip" },
-     "nginx.access.response_code": { "type": "keyword" },
-     "nginx.access.method": { "type": "keyword" },
-     "nginx.access.url": { "type": "keyword" },
-     "nginx.access.request_time": { "type": "float" },
-     "nginx.access.upstream_connect_time": { "type": "float" }
+     "@timestamp": { "type": "date" },
+     "client_ip": { "type": "keyword" },
+     "path": { "type": "keyword" },
+     "host": { "type": "keyword" },
+     "service": { "type": "keyword" }
     }
   }
 }
